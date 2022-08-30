@@ -1,10 +1,11 @@
 package ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.calc.R;
 
@@ -13,6 +14,7 @@ import java.util.Map;
 
 import model.CalculatorImpl;
 import model.Operator;
+import model.ThemeRepository;
 
 public class CalculatorActivity extends AppCompatActivity implements CalculatorView {
 
@@ -20,11 +22,16 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorV
 
     private CalculatorPresenter presenter;
 
-
+    private ThemeRepository themeRepository;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        themeRepository = ThemeRepositoryImpl.getInstance(this);
+//
+//        setTheme(themeRepository.getSaveTheme().getThemeRes());
+
         setContentView(R.layout.activity_calculator);
 
         result = (TextView) findViewById(R.id.result);
@@ -94,7 +101,18 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorV
             }
         });
 
+
+        findViewById(R.id.theme_select).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CalculatorActivity.this, SelectThemeActivity.class);
+                intent.putExtra(SelectThemeActivity.EXTRA_THEME,themeRepository.getSaveTheme());
+                startActivity(intent);
+            }
+        });
+
     }
+
 
     @Override
     public void showResult(String text) {

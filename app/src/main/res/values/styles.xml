@@ -3,15 +3,47 @@
 
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
 
-        <!--        <item name="colorPrimary">@color/Gray</item>-->
-        <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
-        <!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--                <item name="colorPrimary">@color/Gray</item>-->
+<!--                <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--                <item name="colorAccent">@color/colorAccent</item>-->
 
     </style>
 
-    <color name="DarkGray">#22999999</color>
-    <color name="Gray">#99555555</color>
-    <color name="LightGray">#99999999</color>
-    <color name="ResultViewColor">#FFC1C1C1</color>
+    <style name="CalcButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@android:color/holo_green_dark</item>
+    <item name="android:textSize">@dimen/textSize</item>
+    </style>
+
+<style name="CalcButton.Action">
+<item name="android:backgroundTint">@color/black</item>
+</style>
+
+    <style name="CalcButton.Default">
+        <item name="android:backgroundTint">#6C6D6A</item>
+    </style>
+    <style name="CalcButton.Action.Default">
+        <item name="android:backgroundTint">#363735</item>
+    </style>
+
+    <style name="CalcButton.Orange">
+        <item name="android:backgroundTint">@android:color/holo_orange_light</item>
+    </style>
+
+    <style name="CalcButton.Action.Orange">
+        <item name="android:backgroundTint">@android:color/holo_orange_dark</item>
+    </style>
+
+        <style name="CalcButton.Blue">
+        <item name="android:backgroundTint">@android:color/holo_blue_bright</item>
+    </style>
+
+    <style name="CalcButton.Action.Blue">
+        <item name="android:backgroundTint">@android:color/holo_blue_dark</item>
+    </style>
+
+<!--    <color name="DarkGray">#22999999</color>-->
+<!--    <color name="Gray">#99555555</color>-->
+<!--    <color name="LightGray">#99999999</color>-->
+<!--    <color name="ResultViewColor">#FFC1C1C1</color>-->
 
 </resources>

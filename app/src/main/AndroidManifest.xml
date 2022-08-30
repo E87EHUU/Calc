@@ -9,10 +9,10 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Calc"
+        android:theme="@style/Theme.Calc.DefaultTheme"
         tools:targetApi="31">
+
         <activity
             android:name="ui.CalculatorActivity"
             android:exported="true">
@@ -20,8 +20,13 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="ui.SelectThemeActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

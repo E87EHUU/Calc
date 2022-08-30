@@ -19,4 +19,9 @@
     <string name="_123">123</string>
     <string name="_0">0</string>
     <string name="_0123456789">0123456789</string>
+    <string name="T3" />
+    <string name="theme_1">theme 1</string>
+    <string name="theme_2">theme 2</string>
+    <string name="theme_3">theme 3</string>
+    <string name="theme_select">theme select</string>
 </resources>

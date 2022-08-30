@@ -5,6 +5,9 @@
     <dimen name="buttonSize">70dp</dimen>
     <dimen name="resultViewSize">410dp</dimen>
     <dimen name="resultTextViewSize">60dp</dimen>
+    <dimen name="resultViewSizeTemp">375dp</dimen>
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="small_padding">3dp</dimen>
 
 
 </resources>
