@@ -1,12 +1,12 @@
 package ui;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -51,13 +51,13 @@ public class SelectThemeActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
 
-                    Toast.makeText(SelectThemeActivity.this, theme.getTitle(), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(SelectThemeActivity.this, theme.getTitle(), Toast.LENGTH_SHORT).show();
 
-                    /*Intent data = new Intent();
+                    Intent data = new Intent();
                     data.putExtra(EXTRA_THEME, theme);
 
                     setResult(Activity.RESULT_OK, data);
-                    finish();*/
+                    finish();
                 }
             });
 
