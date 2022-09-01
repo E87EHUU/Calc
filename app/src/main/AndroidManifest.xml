@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
             <intent-filter>
-                <action android:name="myOwnIntentAction"/>
+                <action android:name="myAction"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
